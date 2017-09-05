@@ -189,6 +189,9 @@ on post-fs-data
     mkdir /data/misc/fm 0770 system system
     chmod 0770 /data/misc/fm
 
+    # Wifi firmware reload path
+    chown wifi wifi /sys/module/wlan/parameters/fwpath
+
     # Color calibration control
     chown system system /sys/devices/virtual/graphics/fb0/rgb
     chmod 0660 /sys/devices/virtual/graphics/fb0/rgb
