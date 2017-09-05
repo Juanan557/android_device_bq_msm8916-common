@@ -67,6 +67,7 @@ TARGET_HAS_LEGACY_CAMERA_HAL1 := true
 
 # Charger
 BOARD_CHARGER_DISABLE_INIT_BLANK := true
+WITH_LINEAGE_CHARGER := false
 
 # CMHW
 BOARD_HARDWARE_CLASS += device/bq/msm8916-common/cmhw/src
