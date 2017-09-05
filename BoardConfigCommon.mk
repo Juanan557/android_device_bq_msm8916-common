@@ -112,7 +112,10 @@ MAX_EGL_CACHE_KEY_SIZE := 12*1024
 MAX_EGL_CACHE_SIZE := 2048*1024
 
 # Headers
-TARGET_SPECIFIC_HEADER_PATH := device/bq/msm8916-common/include
+#TARGET_SPECIFIC_HEADER_PATH := device/bq/msm8916-common/include
+TARGET_FS_CONFIG_GEN += \
+    device/bq/msm8916-common/include/fs_config/file_caps.fs \
+    device/bq/msm8916-common/include/fs_config/mot_aids.fs
 
 # Healthd
 BACKLIGHT_PATH := /sys/class/leds/lcd-backlight/brightness
